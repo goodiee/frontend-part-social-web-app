@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import LoginForm from './components/LoginForm';
+import RegistrationForm from './components/RegistrationForm';
+import HomePage from './components/HomePage';
+import Profile from './components/Profile';
+import ProfilePhotos from './components/ProfilePhotos'; // Import ProfilePhotos component
+import ProfileFriends  from "./components/ProfileFriends";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LoginForm />} />
+                <Route path="/register" element={<RegistrationForm />} />
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/profile" element={<Profile />} />
+                {/* Add route for ProfilePhotos */}
+                <Route path="/profilephotos" element={<ProfilePhotos />} />
+                <Route path="/profilefriends" element={<ProfileFriends />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
+

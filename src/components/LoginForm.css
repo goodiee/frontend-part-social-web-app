@@ -1,0 +1,32 @@
+/* LoginForm.css */
+
+.row {
+    background: transparent;
+    border: none;
+    display: block;
+    text-align: center;
+}
+
+.social-login-btn:hover {
+    background: transparent; /* Override background on hover */
+}
+
+.smaller-input {
+    width: 200px; /* Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Adjust vertical spacing */
+}
+
+.login-input-pass {
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Adjust vertical spacing */
+}
+
+
+
+.social-login-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

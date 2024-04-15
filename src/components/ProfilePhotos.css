@@ -1,0 +1,15 @@
+.img-grid-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.img-grid-list a {
+    display: block; /* Change from inline-block to block to enable margin */
+    margin-bottom: 20px; /* Add margin between images */
+}
+
+.img-portrait {
+    width: 100%;
+    height: auto;
+}

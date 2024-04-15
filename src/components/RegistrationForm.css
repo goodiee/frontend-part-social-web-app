@@ -1,0 +1,11 @@
+/* RegistrationForm.css */
+
+.form-registration-heading {
+    margin-bottom: 20px;
+}
+
+.registration-input {
+    width: 100%; /* Set width to 100% to occupy full width of parent container */
+}
+
+/* Add any additional styles here */
